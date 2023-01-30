@@ -1,0 +1,32 @@
+PROGRAM;
+
+
+Start <Simulation Process>
+if (turn_agent)
+execute A–Prolog<logic_rules_system.txt>
+ <observation_file.txt><update_file.txt>
+ read<answer_set_file.txt>
+ get <X,Y>
+ update <square_occupied.txt>
+execute A–Prolog<logic_rules_system_user.txt>
+ get <X,Y> for simulated action user
+ update <square_occupied.txt>
+ execute A–Prolog<win.txt>
+ if(user==win)
+ {
+ X←X1
+ Y←Y1
+ square(X1,Y1,y)
+ }
+ else 
+
+
+OUTPUT;
+
+
+?- rnd_select([a,b,c,d,e,f,g,h],3,L).
+L = [e,d,a]
+v?- combination(3,[a,b,c,d,e,f],L).
+L = [a,b,c] ;
+L = [a,b,d] ;
+L = [a,b,e] ;

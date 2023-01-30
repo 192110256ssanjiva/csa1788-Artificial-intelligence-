@@ -1,0 +1,25 @@
+PROGRAM;
+
+count_to_10(10) :- write(10),nl.
+count_to_10(X) :-
+   write(X),nl,
+   Y is X + 1,
+   count_to_10(Y).
+
+
+
+OUTPUT;
+
+(16 ms) yes
+| ?- count_to_10(3).
+3
+4
+5
+6
+7
+8
+9
+10
+
+true ?
+yes

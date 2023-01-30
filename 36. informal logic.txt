@@ -1,0 +1,18 @@
+PROGRAM;
+
+parent(adam,able)
+parent(adam,cain)
+male(adam) 
+father(X,Y) :- parent(X,Y),
+ male(X).
+sibling(X,Y) :- 
+
+
+
+OUTPUT;
+
+| ?- loves(Who, Whom).
+ 
+Who = lesley
+Whom = sandy <cr>
+yes

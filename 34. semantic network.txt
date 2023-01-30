@@ -1,0 +1,23 @@
+PROGRAM;
+
+likes(george, kate).
+likes(george, susie).
+likes(george, wine).
+likes(susie, wine).
+likes(kate, gin).
+likes(kate, susie).
+
+
+
+OUTPUT;
+
+?- likes(george, kate).
+Yes
+?- likes(kate, susie).
+Yes
+?- likes(george, X).
+X = kate
+;
+X = Susie
+;
+X = wine

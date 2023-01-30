@@ -1,0 +1,17 @@
+PROGRAM;
+
+% teacher(Teacher,Pupil): Teacher is the teacher of Pupil.
+teacher(lesley, lee).
+teacher(lou, sandy).
+
+
+
+OUTPUT;
+
+| ?-  welsh(lesley).
+ 
+yes
+
+| ?-  welsh(sandy).
+ 
+no
